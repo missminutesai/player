@@ -266,27 +266,7 @@
         <button class="play-button" onclick="playAudio()">Play</button>
     </div>
 
-    <script>
-        function copyCode() {
-            var code = document.getElementById('code').innerText;
-            navigator.clipboard.writeText(code).then(function() {
-                console.log('Code copied to clipboard');
-            }, function(err) {
-                console.error('Could not copy code: ', err);
-            });
-        }
 
-        function playAudio() {
-            var audio = document.getElementById('audio');
-            audio.play();
-            var link = document.createElement('a');
-            link.href = '';
-            link.download = '';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        }
-    </script>
 
 
 </body></html>
